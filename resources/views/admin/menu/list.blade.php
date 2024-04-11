@@ -1,9 +1,10 @@
 @extends('admin.main')
+
 @section('content')
     <table class="table">
         <thead>
         <tr>
-            <th>ID</th>
+            <th style="width: 50px">ID</th>
             <th>Name</th>
             <th>Active</th>
             <th>Update</th>
@@ -11,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-            {!! \App\Helpers\Helper::menu($menus) !!}
+        {!! \App\Helpers\Helper::menu($menus) !!}
         </tbody>
     </table>
 @endsection

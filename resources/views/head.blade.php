@@ -1,9 +1,9 @@
-<title>Home</title>
+<title>{{ $title }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 <link rel="icon" type="image/png" href="/template/images/icons/favicon.png"/>
-<!--===============================================================================================-->
+<!--=====================================/==========================================================-->
 <link rel="stylesheet" type="text/css" href="/template/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="/template/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -30,3 +30,6 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="/template/css/util.css">
 <link rel="stylesheet" type="text/css" href="/template/css/main.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="/template/css/style.css">
+<meta name="csrf-token" content="{{ csrf_token() }}">

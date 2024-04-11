@@ -5,47 +5,68 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Menu\CreateFormRequest;
 use App\Http\Services\Menu\MenuService;
-use http\Env\Request;
+use App\Models\Menu;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
+    protected $menuService;
+
     public function __construct(MenuService $menuService)
     {
         $this->menuService = $menuService;
-
     }
-    public function create(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+
+    public function create()
     {
         return view('admin.menu.add', [
             'title' => 'Thêm Danh Mục Mới',
-            'menus' => $this->menuService->get(0)
-
+            'menus' => $this->menuService->getParent()
         ]);
     }
 
-    public function store(CreateFormRequest $request): \Illuminate\Http\RedirectResponse
+    public function store(CreateFormRequest $request)
     {
         $this->menuService->create($request);
 
         return redirect()->back();
     }
 
-    public function index(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    public function index()
     {
         return view('admin.menu.list', [
             'title' => 'Danh Sách Danh Mục Mới Nhất',
-            'menus' => $this->menuService->get()
+            'menus' => $this->menuService->getAll()
         ]);
     }
-    public function destroy(Request $request): \Illuminate\Http\JsonResponse
+
+    public function show(Menu $menu)
+    {
+        return view('admin.menu.edit', [
+            'title' => 'Chỉnh Sửa Danh Mục: ' . $menu->name,
+            'menu' => $menu,
+            'menus' => $this->menuService->getParent()
+        ]);
+    }
+
+    public function update(Menu $menu, CreateFormRequest $request)
+    {
+        $this->menuService->update($request, $menu);
+
+        return redirect('/admin/menus/list');
+    }
+
+    public function destroy(Request $request): JsonResponse
     {
         $result = $this->menuService->destroy($request);
-        if ($result){
+        if ($result) {
             return response()->json([
                 'error' => false,
-                'message' => 'Xóa Thành Công'
+                'message' => 'Xóa thành công danh mục'
             ]);
         }
+
         return response()->json([
             'error' => true
         ]);

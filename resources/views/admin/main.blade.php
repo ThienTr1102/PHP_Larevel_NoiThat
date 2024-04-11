@@ -17,8 +17,6 @@
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
 
-
-
             <li class="nav-item">
                 <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                     <i class="fas fa-expand-arrows-alt"></i>
@@ -28,16 +26,18 @@
     </nav>
     <!-- /.navbar -->
 
+
     @include('admin.sidebar')
 
 
     <div class="content-wrapper">
 
-
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
+
                 @include('admin.alert')
+
                 <div class="row">
                     <!-- left column -->
                     <div class="col-md-12">
@@ -46,7 +46,9 @@
                             <div class="card-header">
                                 <h3 class="card-title">{{ $title }}</h3>
                             </div>
+
                             @yield('content')
+
                         </div>
                         <!-- /.card -->
                     </div>
@@ -64,7 +66,6 @@
     </div>
 
 
-
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
@@ -73,6 +74,7 @@
         <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
     </footer>
 </div>
+<!-- ./wrapper -->
 @include('admin.footer')
 </body>
 </html>

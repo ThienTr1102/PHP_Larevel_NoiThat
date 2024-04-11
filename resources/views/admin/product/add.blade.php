@@ -1,11 +1,11 @@
 @extends('admin.main')
 
 @section('head')
-    <script src="/ckeditor/ckeditor.js"></script>
+    <script src="/public/ckeditor/ckeditor.js"></script>
 @endsection
 
 @section('content')
-    <form action="" method="POST">
+    <form action="" method="POST" >
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">

@@ -44,7 +44,7 @@ class ProductAdminService
             Session::flash('success', 'Thêm Sản phẩm thành công');
         } catch (\Exception $err) {
             Session::flash('error', 'Thêm Sản phẩm lỗi');
-            Log::info($err->getMessage());
+            \Log::info($err->getMessage());
             return  false;
         }
 
@@ -68,7 +68,7 @@ class ProductAdminService
             Session::flash('success', 'Cập nhật thành công');
         } catch (\Exception $err) {
             Session::flash('error', 'Có lỗi vui lòng thử lại');
-            Log::info($err->getMessage());
+            \Log::info($err->getMessage());
             return false;
         }
         return true;
