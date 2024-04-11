@@ -1,5 +1,5 @@
 <header>
-    @php $menusHtml = \App\Helpers\Helper::menus($menus); @endphp
+    @php $menusHtml = \App\Helpers\Helper::class; @endphp
         <!-- Header desktop -->
     <div class="container-menu-desktop">
 

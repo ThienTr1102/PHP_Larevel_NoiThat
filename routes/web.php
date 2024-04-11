@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\CartController;
+use App\Http\Controllers\Admin\UploadController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MainController;
@@ -48,11 +50,11 @@ Route::middleware(['auth'])->group(function () {
         });
 
         #Upload
-        Route::post('upload/services', [\App\Http\Controllers\Admin\UploadController::class, 'store']);
+        Route::post('upload/services', [UploadController::class, 'store']);
 
         #Cart
-        Route::get('customers', [\App\Http\Controllers\Admin\CartController::class, 'index']);
-        Route::get('customers/view/{customer}', [\App\Http\Controllers\Admin\CartController::class, 'show']);
+        Route::get('customers', [CartController::class, 'index']);
+        Route::get('customers/view/{customer}', [CartController::class, 'show']);
     });
 });
 
