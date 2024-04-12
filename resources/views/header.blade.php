@@ -1,5 +1,12 @@
 <header>
-    @php $menusHtml = \App\Helpers\Helper::class; @endphp
+    @php $isTouch = isset($menus);
+        if($isTouch) $menusHtml = \App\Helpers\Helper::menus($menus) ;
+        else $menusHtml = "";
+    @endphp
+
+{{--    @php--}}
+{{--        $menusHtml = \App\Helpers\Helper::class--}}
+{{--        @endphp--}}
         <!-- Header desktop -->
     <div class="container-menu-desktop">
 
@@ -17,6 +24,7 @@
                         <li class="active-menu"><a href="/">Trang Chủ</a> </li>
 
                         {!! $menusHtml !!}
+{{--                        \App\Helpers\Helper::menus($menus);--}}
 
                         <li>
                             <a href="contact.html">Liên Hệ</a>
