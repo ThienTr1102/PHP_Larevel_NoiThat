@@ -4,11 +4,7 @@
             <!-- Block2 -->
             <div class="block2">
                 <div class="block2-pic hov-img0">
-                    <a href="/san-pham/{{ $product->id }}-{{ Str::slug($product->name, '-') }}.html"
-                       class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                    <img src="{{ $product->thumb }}" alt="{{ $product->name }}"  >
-                    </a>
-
+                    <img src="{{ $product->thumb }}" alt="{{ $product->name }}">
                 </div>
 
                 <div class="block2-txt flex-w flex-t p-t-14">
@@ -19,7 +15,7 @@
                         </a>
 
                         <span class="stext-105 cl3">
-							{!!  \App\Helpers\Helper::price($product->price, $product->price_sale)  !!} <small>đ</small>
+							{!!  \App\Helpers\Helper::price($product->price, $product->price_sale)  !!}
                         </span>
                     </div>
                 </div>

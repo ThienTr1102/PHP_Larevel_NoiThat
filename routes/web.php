@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\SliderController;
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
+Route::get('/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('account.register');
 
 Route::middleware(['auth'])->group(function () {
 
