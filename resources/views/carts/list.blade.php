@@ -5,7 +5,7 @@
         @include('admin.alert')
 
         @if (count($products) != 0)
-            <div class="container">
+            <div class="container" >
                 <div class="row">
                     <div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
                         <div class="m-l-25 m-r--38 m-lr-0-xl">
@@ -14,11 +14,11 @@
                                 <table class="table-shopping-cart">
                                     <tbody>
                                     <tr class="table_head">
-                                        <th class="column-1">Product</th>
+                                        <th class="column-1">Sản phẩm</th>
                                         <th class="column-2"></th>
-                                        <th class="column-3">Price</th>
-                                        <th class="column-4">Quantity</th>
-                                        <th class="column-5">Total</th>
+                                        <th class="column-3">Giá</th>
+                                        <th class="column-4">Số lượng</th>
+                                        <th class="column-5">Tổng</th>
                                         <th class="column-6">&nbsp;</th>
                                     </tr>
 
@@ -63,15 +63,15 @@
                             <div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
                                 <div class="flex-w flex-m m-r-20 m-tb-5">
                                     <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text"
-                                           name="coupon" placeholder="Coupon Code">
+                                           name="coupon" placeholder="Mã giảm giá">
 
                                     <div
                                         class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                        Apply coupon
+                                        Áp dụng
                                     </div>
                                 </div>
 
-                                <input type="submit" value="Update Cart" formaction="/update-cart"
+                                <input type="submit" value="Cập nhật" formaction="/update-cart"
                                        class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
                                 @csrf
                             </div>
@@ -79,15 +79,15 @@
                     </div>
 
                     <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
-                        <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
-                            <h4 class="mtext-109 cl2 p-b-30">
-                                Cart Totals
+                        <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm" >
+                            <h4 class="cl2 p-b-30">
+                                <strong>XÁC NHẬN</strong>
                             </h4>
 
                             <div class="flex-w flex-t p-t-27 p-b-33">
                                 <div class="size-208">
-                                    <span class="mtext-101 cl2">
-                                        Total:
+                                    <span class="cl2">
+                                        Tổng tiền:
                                     </span>
                                 </div>
 
@@ -140,6 +140,13 @@
             </div>
     </form>
     @else
-        <div class="text-center"><h2>Giỏ hàng trống</h2></div>
+        <!-- Phần giỏ hàng trống -->
+        <div class="container text-center">
+            <div class="empty-cart">
+                <h2 class="mb-4">Giỏ hàng trống</h2>
+                <p class="mb-4">Hãy khám phá các sản phẩm tuyệt vời của chúng tôi để bắt đầu mua sắm ngay hôm nay!</p>
+                <a href="/" class="btn btn-primary">Tiếp tục mua sắm</a>
+            </div>
+        </div>
     @endif
 @endsection

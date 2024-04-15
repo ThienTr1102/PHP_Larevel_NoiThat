@@ -1,142 +1,150 @@
 
 <!-- Footer -->
+<style>
+    .bg3 {
+        background-color: #f9f5f0;
+    }
+    .cl0 {
+        color: #000;
+    }
+</style>
 <footer class="bg3 p-t-75 p-b-32">
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-4 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Categories
+                    CÔNG TY TNHH LUZO HOME
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Women
+                        <a class="stext-107 cl7 hov-cl1 trans-04">
+{{--                            <img src ="images/z5347393226893_f79477cf89523475a8603df9f3c99582.jpg" >--}}
+                            Emial: shop@luzo.vn
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Men
+                        <a class="stext-107 cl7 hov-cl1 trans-04">
+{{--                            <img src ="images/z5347393226760_78a01f0bd3f9cc52fdc03263ab74e6ca.jpg" >--}}
+                            Hotline: 0888.68 79 88
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shoes
+                        <a class="stext-107 cl7 hov-cl1 trans-04" >
+{{--                            <img src ="template/images/z5347393218839_7879de6f032cfe86a47cf7f61c2c9883.jpg" >--}}
+                            Showroom: 50/3 Ba Vân, phường 14, Tân Bình, TP.HCM
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Watches
+                        <a class="stext-107 cl7 hov-cl1 trans-04">
+{{--                            <img src ="images/z5347393218839_7879de6f032cfe86a47cf7f61c2c9883.jpg" >--}}
+                            Xưởng: 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-4 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Help
+                    Sản phẩm bán chạy
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Track Order
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Bàn làm việc
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Returns
+                        <a class="stext-107 cl7 hov-cl1 trans-04">
+                            Giường ngủ
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shipping
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Đệm sofa
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            FAQs
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Đèn trang tri
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-4 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    GET IN TOUCH
+                    Sản phẩm khác
                 </h4>
+                <ul>
+                    <li class="p-b-10">
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Ghe xoay
+                        </a>
+                    </li>
 
-                <p class="stext-107 cl7 size-201">
-                    Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
-                </p>
+                    <li class="p-b-10">
+                        <a class="stext-107 cl7 hov-cl1 trans-04">
+                            Tu ho so
+                        </a>
+                    </li>
 
-                <div class="p-t-27">
-                    <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-facebook"></i>
-                    </a>
+                    <li class="p-b-10">
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Tu quan ao go
+                        </a>
+                    </li>
 
-                    <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-instagram"></i>
-                    </a>
+                    <li class="p-b-10">
+                        <a  class="stext-107 cl7 hov-cl1 trans-04">
+                            Giuong pllte go
+                        </a>
+                    </li>
+                </ul>
 
-                    <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-pinterest-p"></i>
-                    </a>
-                </div>
+
             </div>
 
-            <div class="col-sm-6 col-lg-3 p-b-50">
-                <h4 class="stext-301 cl0 p-b-30">
-                    Newsletter
-                </h4>
 
-                <form>
-                    <div class="wrap-input1 w-full p-b-4">
-                        <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
-                        <div class="focus-input1 trans-04"></div>
-                    </div>
-
-                    <div class="p-t-18">
-                        <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
-            </div>
         </div>
 
-        <div class="p-t-40">
-            <div class="flex-c-m flex-w p-b-18">
-                <a href="#" class="m-all-1">
-                    <img src="images/icons/icon-pay-01.png" alt="ICON-PAY">
-                </a>
 
-                <a href="#" class="m-all-1">
-                    <img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
-                </a>
+        </div>
 
-                <a href="#" class="m-all-1">
-                    <img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
-                </a>
+{{--        <div class="p-t-40">--}}
+{{--            <div class="flex-c-m flex-w p-b-18">--}}
+{{--                <a href="#" class="m-all-1">--}}
+{{--                    <img src="template/images/icons/icon-pay-01.png" alt="ICON-PAY">--}}
+{{--                </a>--}}
 
-                <a href="#" class="m-all-1">
-                    <img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
-                </a>
+{{--                <a href="#" class="m-all-1">--}}
+{{--                    <img src="template/images/icons/icon-pay-02.png" alt="ICON-PAY">--}}
+{{--                </a>--}}
 
-                <a href="#" class="m-all-1">
-                    <img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
-                </a>
-            </div>
+{{--                <a href="#" class="m-all-1">--}}
+{{--                    <img src="template/images/icons/icon-pay-03.png" alt="ICON-PAY">--}}
+{{--                </a>--}}
+
+{{--                <a href="#" class="m-all-1">--}}
+{{--                    <img src="template/images/icons/icon-pay-04.png" alt="ICON-PAY">--}}
+{{--                </a>--}}
+
+{{--                <a href="#" class="m-all-1">--}}
+{{--                    <img src="template/images/icons/icon-pay-05.png" alt="ICON-PAY">--}}
+{{--                </a>--}}
+{{--            </div>--}}
 
             <p class="stext-107 cl6 txt-center">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">PTT</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">PTT</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
             </p>
@@ -192,7 +200,7 @@
 
                                 <div class="item-slick3" data-thumb="images/product-detail-03.jpg">
                                     <div class="wrap-pic-w pos-relative">
-                                        <img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+                                        <img src="template/images/product-detail-03.jpg" alt="IMG-PRODUCT">
 
                                         <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
                                             <i class="fa fa-expand"></i>

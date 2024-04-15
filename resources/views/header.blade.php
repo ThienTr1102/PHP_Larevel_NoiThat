@@ -15,8 +15,8 @@
             <nav class="limiter-menu-desktop container">
 
                 <!-- Logo desktop -->
-                <a href="#" class="logo">
-                    <img src="/template/images/icons/logo-01.png" alt="IMG-LOGO">
+                <a href="http://noithat.vtest/" class="logo">
+                    <img src="/template/images/icons/luzo-logo.jpg" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu desktop -->
@@ -25,13 +25,13 @@
                         <li class="active-menu"><a href="/">Trang Chủ</a> </li>
 
                         {!! $menusHtml !!}
-{{--                        {!!\App\Helpers\Helper::menus($menus)!!}--}}
 
                         <li>
                             <a href="contact.html">Liên Hệ</a>
                         </li>
                     </ul>
                 </div>
+
 
                 <!-- Icon header -->
                 <div class="wrap-icon-header flex-w flex-r-m">
@@ -49,11 +49,12 @@
         </div>
     </div>
 
+
     <!-- Header Mobile -->
     <div class="wrap-header-mobile">
         <!-- Logo moblie -->
         <div class="logo-mobile">
-            <a href="index.html"><img src="/template/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+            <a href="http://noithat.vtest/"><img src="/template/images/icons/luzo-logo.jpg" alt="IMG-LOGO"></a>
         </div>
 
         <!-- Icon header -->
@@ -105,4 +106,5 @@
             </form>
         </div>
     </div>
+
 </header>

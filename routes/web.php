@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\Admin\UploadController;
+use App\Http\Controllers\Auth\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MainController;
@@ -11,7 +12,6 @@ use App\Http\Controllers\Admin\SliderController;
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
-Route::get('/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('account.register');
 
 Route::middleware(['auth'])->group(function () {
 
@@ -70,3 +70,12 @@ Route::get('carts', [App\Http\Controllers\CartController::class, 'show']);
 Route::post('update-cart', [App\Http\Controllers\CartController::class, 'update']);
 Route::get('carts/delete/{id}', [App\Http\Controllers\CartController::class, 'remove']);
 Route::post('carts', [App\Http\Controllers\CartController::class, 'addCart']);
+
+
+
+//Route::controller(LoginRegisterController::class)->group(function() {
+//    Route::get('/register', 'register')->name('register');
+//    Route::post('/store', 'store')->name('store');
+//    Route::get('/login', 'login')->name('login');
+//    Route::post('/logout', 'logout')->name('logout');
+//});
